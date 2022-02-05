@@ -1,0 +1,21 @@
+.info {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+.info ul {
+  font-size: 1.25rem;
+}
+.info ul h5 {
+  margin: 1em;
+  font-size-adjust: 1.25rem;
+}
+.info ul li {
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: bold;
+  list-style: none;
+}
+.info ul li + li {
+  margin-top: 1em;
+}

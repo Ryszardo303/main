@@ -1,0 +1,102 @@
+@import url('compinitial.css');
+
+header {
+  color: var(--color-font);
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+.custom-shape-divider-bottom-1643000481 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1643000481 svg {
+  position: relative;
+  display: block;
+  width: calc(108% + 1.3px);
+  height: 127px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1643000481 .shape-fill {
+  fill: #ffffff;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  transform: translate(-50%, -50%);
+}
+.wrappericons {
+  margin: 3em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.hero-image {
+  background-image: linear-gradient(
+      to right,
+      rgba(26, 26, 26, 0.55),
+      rgba(17, 17, 17, 0.9)
+    ),
+    url('https://galeria.bankier.pl/p/4/2/4fcea5c53890e9-540-210-0-387-2500-975.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  animation: slideup 500ms linear alternate;
+}
+
+@keyframes slideup {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.arrow {
+  position: absolute;
+  bottom: 8em;
+  left: 3em;
+}
+
+.arrow svg {
+  stroke: white;
+  stroke-width: 3px;
+  animation: arrowDU 1.2s ease alternate 350ms infinite;
+}
+
+@keyframes arrowDU {
+  to {
+    transform: translateY(45px);
+  }
+}
+
+@media only screen and (max-width: 1176px) {
+  header {
+    height: 100vh;
+  }
+
+  .hero-image {
+    height: 100vh;
+  }
+}
